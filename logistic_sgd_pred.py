@@ -485,5 +485,5 @@ if __name__ == '__main__':
         on_unused_input='ignore'
     )
 
-out = open('/home/nigel/kaggleplankton/deeplearn/data/pred_out.pkl', 'wb')
+out = open('/srv/work/kaggleplankton/data/pred_out.pkl', 'wb')
 pickle.dump(out, classifier.y_pred)
