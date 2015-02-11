@@ -487,5 +487,5 @@ if __name__ == '__main__':
 
 
 out = open('/srv/work/kaggleplankton/data/pred_out.pkl', 'wb')
-prediction = np.array(classifier.y_pred)
+prediction = str(np.array(classifier.y_pred))
 pickle.dump(out, prediction)
