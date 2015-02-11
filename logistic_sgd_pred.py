@@ -485,5 +485,7 @@ if __name__ == '__main__':
         on_unused_input='ignore'
     )
 
+
 out = open('/srv/work/kaggleplankton/data/pred_out.pkl', 'wb')
-pickle.dump(out, classifier.y_pred)
+prediction = np.array(classifier.y_pred)
+pickle.dump(out, prediction)
