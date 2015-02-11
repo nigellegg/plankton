@@ -484,6 +484,6 @@ if __name__ == '__main__':
         },
         on_unused_input='ignore'
     )
-
+prediction = np.array(classifier.y_pred)
 out = open('/home/nigel/kaggleplankton/deeplearn/data/pred_out.pkl', 'wb')
 pickle.dump(out, classifier.y_pred)
